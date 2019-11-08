@@ -10,7 +10,7 @@
     "test": "echo \"Error: no test... minimal project\" && exit 1",
     "lint": "echo \"Error: no lint... minimal project\" && exit 1",
     "e2e": "echo \"Error: no e2e... minimal project\" && exit 1",
-    "preintegration": "npm run setup && npm install",
+    "preintegration": "npm run setup && npm install --ignore-scripts",
     "integration": "ng build --prod --build-optimizer"
   },
   "private": true,
@@ -21,12 +21,11 @@
     "@angular/compiler": "file:lib/@angular/compiler",
     "@angular/core": "file:lib/@angular/core",
     "@angular/forms": "file:lib/@angular/forms",
-    "@angular/http": "file:lib/@angular/http",
     "@angular/platform-browser": "file:lib/@angular/platform-browser",
     "@angular/platform-browser-dynamic": "file:lib/@angular/platform-browser-dynamic",
     "@angular/router": "file:lib/@angular/router",
     "core-js": "file:lib/core-js",
-    "moment": "file:lib/moment",
+    "date-fns": "file:lib/date-fns",
     "ng-zorro-antd": "file:lib/ng-zorro-antd",
     "rxjs": "file:lib/rxjs",
     "zone.js": "file:lib/zone.js"
